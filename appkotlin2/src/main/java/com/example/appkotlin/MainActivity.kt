@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             override fun onClick(v: View) {
                 if(mCountDownTimer != null){
                     mCountDownTimer!!.startTimer(4000,100)
-                    thread { Runnable {
+                    thread { Runnable {   //test
                         SystemClock.sleep(4000)
                         mCountDownTimer!!.ancleTimers()
                     } }.start()
